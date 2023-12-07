@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="s1">
+      <div id="tossDiv">
+
+        <div id="teams">
+          Team 1: <input type="text" id="team1" name="team1" />
+          
+          Team 2: <input type="text" id="team2" name="team2" />
+        </div>
+        <br />
+        <div class="tossingButton">
+          <button name="toss" class="tossButton" id="tosser" onclick="toss()">
+            Toss
+          </button>
+        </div>
+          
+        <br />
+        <div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="s2">
+      <h3 id="tossWinnerName"></h3>
+      <button id="totalCredits">Credits</button>
+      <div>
+        <p id="tossWinnerTeam"></p>
+      </div>
+<div>
+
+  <div id="team1List"></div>
+</div>
+<div id="divTeam2">
+
+  <div id="team2List"></div>
+</div>
+
+      <div id="team2summary">
+       
+      </div>
+    </section>
+
+    <section id="s3">
+      <div class="summaryAndCapBtn" id="team1summary">
+     
+          
+       
+      </div>
+
+      <div class="summaryAndCap">
+        <div>
+          <div id="displayTeam">
+            <p id="teamSummary"></p>
+          </div>
+        </div>
+
+        <div>
+          <p id="chooseCap"></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="s4">
+      <div id="createTeam2">
+        <button onclick="nextTeam(tossWinnerTeam)" id="nextTeamBtn">
+          Next Team
+        </button>
+      </div>
+    </section>
+
+    <section>
+      <div id="bothTeam">
+        <button id="bothTeamPlayers" onclick="showBothTeam()">
+          Show both teams
+        </button>
+      </div>
+
+      <div class="t1andt2" id="team1andTeam2">
+        <div class="bothTeamShow">
+
+          <div>
+            <p id="team1choosedPlayers"></p>
+          </div>
+          
+          <div>
+            <p id="team2choosedPlayers"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- .................................MATCH STARTING........................................ -->
+    <section id="battingTeamSection">
+      <section>
+        <div>
+          <button id="hitBtn" onclick="hitShot()">HIT</button>
+
+        </div>
+        <div>
+          <button class="commonBtn" id="hitBtn2" onclick="hitShot2()">HIT</button>
+        </div>
+        <button class="matchWinner" id="firstBatting"></button>
+
+      </section>
+      
+      <section>
+        <div class="bothTeamPoints"> 
+          <button class="commonBtn" id="battingTeamPoints"></button>
+          <button class="commonBtn" id="bowlingTeamPoints"></button>
+        </div>
+        <div >
+
+          <div class="bothTeamStat">
+             
+            <div>
+              <p id="teamOneName"></p>
+              <p class="battingTeam" id="battingTeam"></p>
+              
+            </div>
+            <div>
+              <p id="teamOneName"></p>
+              <p class="bowlingTeam" id="bowlingTeam"></p>
+            </div>
+
+            <div>
+              <button class="commonBtn" id="overDetail"></button>
+            </div>
+              <div>
+                <button class="playTeam2" id="playTeam2" onclick="playTeam2()">
+                  Play Team2
+                </button>
+              </div>
+          </div>
+        <div>
+          <p class="commonBtn" id="currShot"></p>
+        </div>
+        <div class="currBatter">
+          <p class="commonBtn" id="currBatter"></p>
+        </div>
+        <div>
+          <!-- <p class="bowlingTeam" id="bowlingTeam"></p> -->
+        </div>
+        <div class="currBowler">
+          <p class="commonBtn" id="currBowler"></p>
+        </div>
+
+        
+      </section>
+    </section>
+
+  
+
+    <section> 
+      <div>
+        <button class="matchWinner" id="matchWinner"></button>
+      </div>
+    </section>
+
+    
+    
+    
+    
+    <!-- ========================inning one table========================\ -->
+    <div class="matchStats" id="matchStats">
+      <div class="teamsTable">
+
+        <div>
+          <button class="commonBtn" id="teamOnePoints"></button>
+          
+          <table  class="inningOne">
+            <tr class="tableRow">
+              <th>Batsman</th>
+              <th>Balls</th>
+              <th>Runs</th>
+              <th>Fours</th>
+              <th>Sixes</th>
+               <th>Points</th>
+      <tbody class="tableBody" id="inningOneBatter">
+        
+      </tbody>
+      
+      
+    </tr>
+    
+  </table>
+  <p>"DNB PLAYERS: "</p>
+  <p id="dnb1">
+    
+  </p>
+  
+  
+  <table>
+    
+    <tr class="tableRow">
+      <th>Bowler</th>
+      <th>Dots</th>
+      <th>Wickets</th>
+      <th>Points</th>
+    </tr>
+    
+    <tbody class="tableBody" id="inningOneBowler">
+      
+    </tbody>
+  </table>
+</div>
+
+<div>
+  <button class="commonBtn" id="teamTwoPoints"></button>
+  
+  
+    <table class="inningTwo">
+      <tr class="tableRow">
+        <th>Batsman</th>
+        <th>Balls</th>
+        <th>Runs</th>
+        <th>Fours</th>
+        <th>Sixes</th>
+         <th>Points</th>
+        
+      </tr>
+      
+      <tbody class="tableBody" id="inningTwoBatter">
+        
+      </tbody>
+      
+    </table>
+    <p>"DNB PLAYERS: "</p>
+    
+    <p id="dnb2"></p>
+    <table>
+      
+      <tr class="tableRow">
+        <th>Bowler</th>
+        <th>Dots</th>
+        <th>Wickets</th>
+        <th>Points</th>
+      </tr>
+      
+      
+      <tbody class="tableBody" id="inningTwoBowler">
+        
+      </tbody>
+    </table>
+  </div>
+</div>
+</div>
+<script src="index.js"></script>
+
+</body>
+</html>

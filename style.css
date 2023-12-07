@@ -1,0 +1,154 @@
+body,
+h1,
+h4,
+button,
+input,
+select {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-family: Arial, sans-serif;
+  /* color: rgb(220, 182, 182); */
+  /* border-radius: 1em; */
+}
+body {
+  background-color: rgb(238, 234, 234);
+  padding: 20px;
+  color: rgb(14, 1, 1);
+  font-weight: bolder;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  color: #bc0707;
+}
+
+
+.tossButton,
+#totalCredits , #team1PlayerDetails,  #team2PlayerDetails ,
+#nextTeamBtn , #bothTeamPlayers, .selectCap ,#hitBtn , .commonBtn{
+  /* display: flex; */
+  margin-top: 2em;
+  background-color: rgb(81, 110, 243);
+  color: #e7e3e3;
+  padding: 10px 15px;
+  border-radius: 5px;
+  align-items: center;
+}
+
+#team1List , #team2List  ,.bothTeamShow {
+  background-color: rgb(242, 237, 237);
+  display: flex;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: 2px solid #b00707; 
+    border-radius: 3px; 
+  color: #0d0a0a;
+  font-weight: bolder;
+  width: 1200px;
+  height: 18em;
+  overflow: auto;
+}
+
+#teams {
+    display: flex;
+    justify-content: space-around;
+    width: 600px;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid #0c0c96; 
+    border-radius: 8px; 
+    background-color: #f6f4f4; 
+    margin: 20px;
+    overflow: auto;
+  }
+
+  
+input[type="text"] {
+  padding: 8px;
+  margin: 5px;
+  width: 16em;
+  border: 1px solid #ac0909;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.addPlayer,
+.removePlayer ,.chooseCap ,.chooseViceCap  {
+  background-color: #3a42db;
+  color: #efecec;
+  width: 32px;
+  font-size: large;
+  height: 18px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+#team1Players , #currBatter , #currBaller ,#dnb ,.battingTeam , .bowlingTeam,.commonBtn ,#batsmanStats , #bowlerStats , #batsmanStats2 , #bowlerStats2 {
+    color: rgb(14, 13, 13);
+    font-weight: bolder;
+}
+.matchWinner{
+  margin-top: 2em;
+  background-color: rgb(30, 27, 27);
+  color: #f6f4f4;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.tableRow {
+  background-color: #eeebeb;
+  font-weight: bolder;
+  color: #3a42db;
+
+}
+
+.tableBody  {
+  /* background-color: #9e3434; */
+  color: #060606;
+}
+
+th,
+td {
+  border: 1px solid #110f0f;
+  padding: 8px;
+  text-align: center;
+}
+
+.matchStats,.bothTeamStat , .teamsTable ,.selectingTeamOne {
+  display: flex;
+  justify-content:space-between;
+  /* width: auto; */
+}
+.summaryAndCap{
+  /* overflow: auto; */
+  width: 1200px;
+  /* align-items: center; */
+  padding: 30px;
+  height: 15em;
+  border: solid #0c0c96; 
+  border-radius: 8px; 
+  background-color: #f6f4f4; 
+margin-top: 3em;
+}
+  p#teamSummary {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.playTeam2{
+  background-color:rgb(68, 202, 68);
+  color: black;
+  font-weight: bolder;
+  width: 13em;
+  height: 7em;
+  border-radius: 33px;
+}
